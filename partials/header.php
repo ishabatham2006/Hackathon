@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../functions.php'; page_start($pageTitle??'StockSense'); if(!empty($_SESSION['user_id'])) nav(); echo '<main class="page-wrap">'; show_flash(); ?>
