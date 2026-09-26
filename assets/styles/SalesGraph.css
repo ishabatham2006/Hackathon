@@ -1,0 +1,33 @@
+/* styles/SalesGraph.css */
+
+.sales-graph-container {
+  background-color: #fff0f6;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-graph-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ff4f9c;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.sales-graph-empty {
+  text-align: center;
+  color: #a6487a;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.chart-wrapper {
+  flex: 1;
+  min-height: 300px;
+  position: relative;
+  overflow-x: auto;
+}

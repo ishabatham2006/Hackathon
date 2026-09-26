@@ -1,0 +1,14 @@
+.stock-graph-container {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stock-graph-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #db2777;
+  margin-bottom: 1rem;
+}

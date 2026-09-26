@@ -1,0 +1,48 @@
+/* styles/CategoryChoice.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe0ec, #ffcde5);
+}
+
+.category-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  color: #ff4f9c;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.category-button:hover {
+  background-color: #ff4f9c;
+  transform: scale(1.05);
+}

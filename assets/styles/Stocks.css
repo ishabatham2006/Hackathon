@@ -1,0 +1,158 @@
+/* styles/Stocks.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe0ec, #ffcde5);
+}
+
+.stocks-page {
+  padding: 2rem;
+}
+
+.stocks-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.stocks-graph {
+  flex: 2;
+  min-width: 300px;
+}
+
+.recommendations-panel {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff0f6;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 18px rgba(255, 105, 180, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommend-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff4f9c;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.recommend-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem 0;
+}
+
+.recommend-item {
+  background-color: #ffe6ef;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  color: #cc1f66;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(255, 105, 180, 0.15);
+}
+
+.recommend-empty {
+  color: #a6487a;
+  font-style: italic;
+  text-align: center;
+}
+
+.restock-btn {
+  margin-top: 1rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.restock-btn:hover {
+  background-color: #ff4f9c;
+  transform: scale(1.05);
+}
+
+.stocks-table-section {
+  background-color: #fff0f6;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(255, 105, 180, 0.15);
+}
+
+.stocks-title {
+  font-size: 1.8rem;
+  color: #ff4f9c;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.stocks-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff8fc;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.stocks-table th,
+.stocks-table td {
+  padding: 0.8rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ffe6ef;
+}
+
+.stocks-table th {
+  background-color: #ffd6e8;
+  color: #a6487a;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: #a6487a;
+  font-size: 1rem;
+  margin: 0 0.4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.actions button:hover {
+  transform: scale(1.2);
+}
+
+.low {
+  color: #c62828;
+  font-weight: bold;
+}
+
+.medium {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.high {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+/* Responsive table scroll */
+@media (max-width: 768px) {
+  .stocks-table-section {
+    overflow-x: auto;
+  }
+
+  .stocks-grid {
+    flex-direction: column;
+  }
+}
