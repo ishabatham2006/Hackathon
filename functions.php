@@ -14,7 +14,7 @@ function stocks():array{return db()->query('SELECT * FROM stocks ORDER BY name,e
 function low_stocks():array{return db()->query("SELECT name,unit,SUM(CASE WHEN expiry<CURDATE() THEN 0 ELSE quantity END) totalQuantity FROM stocks GROUP BY name,unit HAVING totalQuantity<25 ORDER BY totalQuantity")->fetchAll();}
 function alerts():array{$a=[];foreach(db()->query('SELECT * FROM stocks')->fetchAll() as $s){if($s['expiry']<date('Y-m-d'))$a[]=['message'=>$s['name'].' has expired.','type'=>'expiry'];}foreach(low_stocks() as $s)$a[]=['message'=>'Low stock: '.$s['name'].' ('.$s['totalQuantity'].' '.$s['unit'].').','type'=>'restock'];foreach(db()->query('SELECT * FROM clothing_items')->fetchAll() as $c){$exp=date('Y-m-d',strtotime($c['restock_date'].' +2 months'));if($exp<date('Y-m-d'))$a[]=['message'=>$c['name'].' is outdated. Please replace it.','type'=>'expired'];if((int)$c['quantity_value']<15)$a[]=['message'=>$c['name'].' is low in stock.','type'=>'low'];}return $a;}
 function nav():void{echo '<nav class="navbar">'
-    .'<a class="navbar-brand" href="inventory_dashboard.php">📦 StockSense</a>'
+    .'<a class="navbar-brand" href="inventory_dashboard.php"> StockSense</a>'
     .'<div class="navbar-links">'
     .'<a href="inventory_dashboard.php">Dashboard</a>'
     .'<a href="products.php">Products</a>'
@@ -27,7 +27,7 @@ function nav():void{echo '<nav class="navbar">'
     .'<a href="warehouses.php">Warehouses</a>'
     .'</div></div>'
     .'<div class="dropdown"><span class="dropdown-toggle">Extra Features ▾</span><div class="dropdown-menu">'
-    .'<a href="category.php">Home</a><a href="dashboard.php">Food Dashboard</a><a href="stocks.php">Stocks</a><a href="restock.php">Restock</a><a href="billing.php">Billing</a><a href="clothing.php">Clothing</a><a href="notifications.php">Notifications</a><a href="news.php">News</a><a href="trends.php">Trends</a><a href="support.php">Support</a>'
+    .'<a href="notifications.php">Notifications</a><a href="news.php">News</a><a href="trends.php">Trends</a><a href="support.php">Support</a>'
     .'</div></div>'
     .'</div>'
     .'<div class="dropdown navbar-account"><span class="dropdown-toggle">👤 Account ▾</span><div class="dropdown-menu dropdown-menu-right">'
