@@ -1,6 +1,4 @@
-# StockSense — PHP/MySQL version 
-
-This is a PHP/MySQL conversion baseline based on the supplied StockSense source. 
+# StockSense: PHP/MySQL version 
 
 ## Included pages/features
 - Register, login, logout, category selection
