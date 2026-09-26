@@ -1,0 +1,145 @@
+/* styles/Billing.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe0ec, #ffcde5);
+}
+
+.billing-page {
+  padding: 2rem;
+}
+
+.billing-container {
+  background-color: #fff0f6;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 18px rgba(255, 105, 180, 0.15);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #ff4f9c;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.input-field {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #ffaad4;
+  background-color: #fff8fc;
+  min-width: 180px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ff4f9c;
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+}
+
+.add-button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #ff4f9c;
+  transform: scale(1.05);
+}
+
+.billing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff8fc;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.1);
+}
+
+.table-header th {
+  background-color: #ffd6e8;
+  color: #a6487a;
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.table-row td {
+  text-align: center;
+  padding: 0.7rem;
+  border-bottom: 1px solid #ffe6ef;
+  font-size: 0.95rem;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 2px dashed #ffaad4;
+  margin-bottom: 2rem;
+}
+
+.total-section h3 {
+  font-size: 1.4rem;
+  color: #cc1f66;
+}
+
+.confirm-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirm-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+.history-section {
+  margin-top: 3rem;
+}
+
+.no-history {
+  text-align: center;
+  font-style: italic;
+  color: #a6487a;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+  .input-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .total-section {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

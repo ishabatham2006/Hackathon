@@ -1,0 +1,73 @@
+/* styles/Register.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe0ec, #ffcde5);
+}
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.register-box {
+  background-color: #fff0f6;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.register-box:hover {
+  transform: translateY(-5px);
+}
+
+.register-title {
+  font-size: 2rem;
+  color: #ff4f9c;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.register-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #ffaad4;
+  background-color: #fff8fc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #ff4f9c;
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+}
+
+.register-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-button:hover {
+  background-color: #ff4f9c;
+  transform: scale(1.03);
+}

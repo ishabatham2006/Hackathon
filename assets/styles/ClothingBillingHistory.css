@@ -1,0 +1,42 @@
+.billing-history-container {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.billing-history-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #db2777;
+  margin-bottom: 1rem;
+}
+
+.billing-history-table-wrapper {
+  overflow-x: auto;
+}
+
+.billing-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.billing-history-header {
+  background-color: #fce7f3;
+}
+
+.billing-history-header th,
+.billing-history-row td {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.billing-history-row {
+  border-top: 1px solid #e5e7eb;
+}
+
+.center-text {
+  text-align: center;
+}

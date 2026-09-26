@@ -1,0 +1,19 @@
+.notification-box {
+  background-color: #fef9c3; /* yellow-100 */
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.notification-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #92400e; /* yellow-800 */
+}
+
+.notification-list {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #854d0e; /* yellow-700 */
+}
