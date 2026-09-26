@@ -16,4 +16,3 @@
 4. Check `config.php` and update MySQL credentials as needed.
 5. Open `http://localhost/StockSense_PHP_NoFlask_Graphs/register.php` and create an account.
 
-PHP syntax was checked with `php -l`; the project has not been fully runtime-tested against your local MySQL setup.
